@@ -32,6 +32,7 @@
                         <option value="MANGA">MANGA</option>
                         <option value="BD">BD</option>
                         <option value="POESIE">POESIE</option>
+                        <option value="NOUVELLE">NOUVELLE</option>
                     </select>
                 </div>
                 <div class="input-group mb-3">

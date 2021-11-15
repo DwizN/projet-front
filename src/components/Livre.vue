@@ -2,7 +2,7 @@
     <tr v-if="data">
         <th scope="row">{{this.data.nom}}</th>
         <td>
-            <router-link :to="{ name: 'auteurDetails', params: {id: data.auteur.id } }">
+            <router-link v-if="this.data.auteur" :to="{ name: 'auteurDetails', params: {id: data.auteur.id } }">
                 {{this.data.auteur.prenom}} {{this.data.auteur.nom}}
             </router-link>
         </td>

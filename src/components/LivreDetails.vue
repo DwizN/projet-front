@@ -6,7 +6,7 @@
         <span class="d-block"><b>Lieu de parution:</b> {{this.data.lieuParution}}</span>
         <span class="d-block"><b>Nombre de pages:</b> {{this.data.nbPages}}</span>
         <span class="d-block"><b>Genre:</b> {{this.data.genre}}</span>
-        <span class="d-block"><b>Auteur:</b> {{this.data.auteur.prenom}} {{this.data.auteur.nom}}</span>
+        <span v-if="this.data.auteur" class="d-block"><b>Auteur:</b> {{this.data.auteur.prenom}} {{this.data.auteur.nom}}</span>
     </div>
 </template>
 <script>
